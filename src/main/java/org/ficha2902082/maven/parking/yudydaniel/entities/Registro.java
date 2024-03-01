@@ -1,28 +1,28 @@
 package org.ficha2902082.maven.parking.yudydaniel.entities;
 
-
 import java.time.LocalDate;
 import java.time.LocalTime;
 
 public class Registro {
-  //atributos intrinsecos:
+  // atributos intrinsecos:
   public LocalDate fechaInicio;
   public LocalTime horaInicio;
   public LocalDate fechaFin;
   public LocalTime horaFin;
   public Double valor;
 
-  //atrbutos de relacion
+  // atrbutos de relacion
   public Carro carro;
   public Cupo cupo;
+  public Empleado empleado;
 
-  //Constructor por defecto
+  // Constructor por defecto
   public Registro() {
   }
 
-  //Constructor con parametros
+  // Constructor con parametros
   public Registro(LocalDate fechaInicio, LocalTime horaInicio, LocalDate fechaFin, LocalTime horaFin, Double valor,
-      Carro carro, Cupo cupo) {
+      Carro carro, Cupo cupo, Empleado empleado) {
     this.fechaInicio = fechaInicio;
     this.horaInicio = horaInicio;
     this.fechaFin = fechaFin;
@@ -30,9 +30,7 @@ public class Registro {
     this.valor = valor;
     this.carro = carro;
     this.cupo = cupo;
+    this.empleado = empleado;
   }
-
-  
-  
 
 }
